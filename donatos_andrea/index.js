@@ -80,3 +80,23 @@ function addComment() {
 }
 
 sortComments();
+
+document.addEventListener("DOMContentLoaded", function () {
+
+    const goals = document.querySelectorAll(".goals li");
+    goals.forEach((goal, index) => {
+        setTimeout(() => {
+            goal.style.backgroundColor = "#ffcccc";
+            goal.style.transition = "background-color 1s";
+        }, index * 1000);
+    });
+
+    const socialLinks = document.querySelectorAll(".socials");
+    socialLinks.forEach(link => {
+        link.addEventListener("click", function (event) {
+            event.preventDefault();
+            alert(`You clicked on ${this.textContent} link!`);
+            window.open(this.href, '_blank');
+        });
+    });
+});

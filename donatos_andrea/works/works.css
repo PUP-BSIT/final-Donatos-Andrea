@@ -1,6 +1,6 @@
 body {
     background-image: url("../images/background.gif");
-	background-color: #bcd5a7;
+	background-color: #2c412a;
 	background-blend-mode: overlay;
 	background-position: center;
 	background-attachment: fixed;
@@ -16,4 +16,13 @@ body {
     padding: 10px 20px;
     background-color: #fff;
     border-bottom: 1px solid #ddd;
+}
+
+.hobbies {
+    background-color: #dddddd97;
+	margin: 10px;
+	padding: 30px;
+	margin-bottom: 10px;
+	border-radius: 25px;
+	margin-top: 10px;
 }
