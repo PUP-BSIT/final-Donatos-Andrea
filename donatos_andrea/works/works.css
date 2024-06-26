@@ -1,0 +1,19 @@
+body {
+    background-image: url("./images/background.gif");
+	background-color: #bcd5a7;
+	background-blend-mode: overlay;
+	background-position: center;
+	background-attachment: fixed;
+	background-size: cover;
+	align-items: center;
+	flex-direction: column;
+}
+
+.about-me {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px 20px;
+    background-color: #fff;
+    border-bottom: 1px solid #ddd;
+}

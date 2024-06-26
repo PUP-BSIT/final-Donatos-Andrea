@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+     <meta charset="UTF-8">
+     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+     <link href="../practice.css" rel="stylesheet" />
+     <title>Form</title>
+</head>
+<body>
+     <div class="contact-me">
+          <h2>Contact Me</h2>
+          <form class="contact-container">
+               <div class="container">
+                    <div>
+                         <label for="email">Email:</label>
+                         <input type="text" name="email" id="email" />
+                    </div>
+                    <div>
+                         <label for="fullname">Full name:</label>
+                         <input
+                              type="text"
+                              name="fullname"
+                              id="full_name"
+                         />
+                    </div>
+                    <div>
+                         <label for="subject">Subject:</label>
+                         <input type="text" name="subject" id="subject" />
+                    </div>
+                    <div>
+                         <label for="age">Age:</label>
+                         <input type="number" name="age" id="age" />
+                    </div>
+               </div>
+               <div class="send-copy">
+                    <label for="send-copy">Send me a copy</label>
+                    <input
+                         type="checkbox"
+                         name="send_copy"
+                         id="send_copy"
+                    />
+               </div>
+               <div class="message-contact">
+                    <label for="message">Message:</label>
+                    <textarea name="message" id="message"></textarea>
+               </div>
+               <div class="submit-contact">
+                    <input type="submit" value="Submit" />
+               </div>
+          </form>
+     </div>
+     <h2>TUF DEVELOPERS Comments</h2>
+     <select id="sort_type" onchange="sortComments()">
+          <option value="oldest_first">Oldest First</option>
+          <option value="newest_first">Newest First</option>
+     </select>
+     <ul id="comment_list"></ul>
+</div>
+</section>
+<div class="comment-form">
+<h2>Comment Form</h2>
+<form class="comment-container">
+     <div>
+          <label for="name">Name:</label>
+          <input
+               type="text"
+               placeholder="Enter your name..."
+               id="member_name"
+               oninput="commentForm()"
+          />
+     </div>
+     <div>
+          <label for="comment">Comments:</label>
+          <textarea name="comment" 
+                    id="comment_area" 
+                    oninput="commentForm()"></textarea>
+     </div>
+     <div class="submit-comment">
+          <button type="button" 
+                  id="comment_button" 
+                    onclick="addComment()"
+                    disabled>Comment</button>
+     </div>
+</form>
+</div>
+  <script src="../index.js"></script>
+</body>
+</html>
